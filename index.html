@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to Madrigal.mx</title>
+  <style>
+    :root{
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #0f1724;
+      --muted: #6b7280;
+      --shadow: 0 8px 30px rgba(15, 23, 36, 0.08);
+      --radius: 14px;
+    }
+
+    *{box-sizing: border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      background: linear-gradient(180deg, var(--bg), #fff);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .card{
+      width: 100%;
+      max-width: 900px;
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: clamp(2rem, 4vw, 3.5rem);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    h1{
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.6rem, 3.4vw, 2.25rem);
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+    }
+
+    p.lead{
+      margin: 0 0 1.25rem;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.6;
+      max-width: 60ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .meta{
+      margin-top: 1.25rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* Small screens: make sure spacing stays comfortable */
+    @media (max-width: 420px){
+      .card{ padding: 1.5rem; border-radius: 12px }
+      p.lead{ font-size: 0.98rem }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="site-heading">
+    <h1 id="site-heading">Welcome to Madrigal.mx</h1>
+    <p class="lead">
+      This is a short placeholder paragraph about Madrigal.mx. Replace this text with a brief introduction, services, or contact information to let visitors know what Madrigal is about.
+    </p>
+    <div class="meta">© <span id="year"></span> Madrigal.mx</div>
+  </main>
+
+  <script>
+    // keep the footer year current
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
