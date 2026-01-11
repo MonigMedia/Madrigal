@@ -1,32 +1,32 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   <!-- Primary Meta Tags -->
-  <title>Madrigal.mx - Digital Innovation & Creative Solutions</title>
-  <meta name="title" content="Madrigal.mx - Digital Innovation & Creative Solutions" />
-  <meta name="description" content="Madrigal.mx specializes in cutting-edge digital solutions that transform ideas into reality. Web development, digital strategy, and creative innovation." />
-  <meta name="keywords" content="digital innovation, web development, creative solutions, digital strategy, Madrigal, Mexico" />
-  <meta name="author" content="Madrigal.mx" />
+  <title>Madrigal Systems LLC & Monig Media™ - Innovación Digital</title>
+  <meta name="title" content="Madrigal Systems LLC & Monig Media™ - Innovación Digital" />
+  <meta name="description" content="Soluciones digitales de vanguardia que transforman ideas en realidad. Desarrollo web, estrategia digital e innovación creativa." />
+  <meta name="keywords" content="innovación digital, desarrollo web, soluciones creativas, estrategia digital, Madrigal, México" />
+  <meta name="author" content="Madrigal Systems LLC & Monig Media™" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://madrigal.mx/" />
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://madrigal.mx/" />
-  <meta property="og:title" content="Madrigal.mx - Digital Innovation & Creative Solutions" />
-  <meta property="og:description" content="Madrigal.mx specializes in cutting-edge digital solutions that transform ideas into reality. Web development, digital strategy, and creative innovation." />
+  <meta property="og:title" content="Madrigal Systems LLC & Monig Media™ - Innovación Digital" />
+  <meta property="og:description" content="Soluciones digitales de vanguardia que transforman ideas en realidad. Desarrollo web, estrategia digital e innovación creativa." />
   <meta property="og:image" content="https://madrigal.mx/assets/images/og-image.png" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="Madrigal.mx" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:site_name" content="Madrigal Systems LLC & Monig Media™" />
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://madrigal.mx/" />
-  <meta property="twitter:title" content="Madrigal.mx - Digital Innovation & Creative Solutions" />
-  <meta property="twitter:description" content="Madrigal.mx specializes in cutting-edge digital solutions that transform ideas into reality." />
+  <meta property="twitter:title" content="Madrigal Systems LLC & Monig Media™ - Innovación Digital" />
+  <meta property="twitter:description" content="Soluciones digitales de vanguardia que transforman ideas en realidad." />
   <meta property="twitter:image" content="https://madrigal.mx/assets/images/og-image.png" />
   
   <!-- Favicon -->
@@ -44,10 +44,10 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Madrigal.mx",
+    "name": "Madrigal Systems LLC & Monig Media™",
     "url": "https://madrigal.mx",
     "logo": "https://madrigal.mx/assets/images/logo.png",
-    "description": "Digital Innovation & Creative Solutions",
+    "description": "Innovación Digital & Soluciones Creativas",
     "contactPoint": {
       "@type": "ContactPoint",
       "email": "contact@madrigal.mx",
@@ -58,133 +58,152 @@
   
   <style>
     :root{
-      --bg: #f6f8fb;
-      --bg-end: #ffffff;
+      --bg: #ffffff;
+      --bg-secondary: #f5f5f7;
       --card: #ffffff;
-      --text: #0f1724;
-      --muted: #6b7280;
-      --accent: #3b82f6;
-      --accent-hover: #2563eb;
-      --shadow: 0 8px 30px rgba(15, 23, 36, 0.08);
-      --radius: 14px;
-      --logo-color: #0f1724;
-      --border-color: rgba(107, 114, 128, 0.15);
+      --text: #1d1d1f;
+      --text-secondary: #86868b;
+      --muted: #6e6e73;
+      --accent: #0071e3;
+      --accent-hover: #0077ed;
+      --shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 8px 48px rgba(0, 0, 0, 0.12);
+      --radius: 18px;
+      --logo-color: #1d1d1f;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --nav-bg: rgba(255, 255, 255, 0.8);
+      --hero-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
 
     /* Dark Mode */
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #0a0e17;
-        --bg-end: #0f1724;
-        --card: #1a2332;
-        --text: #f6f8fb;
-        --muted: #9ca3af;
-        --shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-        --logo-color: #f6f8fb;
-        --border-color: rgba(255, 255, 255, 0.1);
+        --bg: #000000;
+        --bg-secondary: #161616;
+        --card: #1d1d1f;
+        --text: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --muted: #86868b;
+        --shadow: 0 2px 16px rgba(255, 255, 255, 0.06);
+        --shadow-lg: 0 8px 48px rgba(255, 255, 255, 0.1);
+        --logo-color: #f5f5f7;
+        --border-color: rgba(255, 255, 255, 0.12);
+        --nav-bg: rgba(29, 29, 31, 0.9);
+        --hero-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       }
     }
 
     /* Manual dark mode toggle */
     [data-theme="dark"] {
-      --bg: #0a0e17;
-      --bg-end: #0f1724;
-      --card: #1a2332;
-      --text: #f6f8fb;
-      --muted: #9ca3af;
-      --shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-      --logo-color: #f6f8fb;
-      --border-color: rgba(255, 255, 255, 0.1);
+      --bg: #000000;
+      --bg-secondary: #161616;
+      --card: #1d1d1f;
+      --text: #f5f5f7;
+      --text-secondary: #a1a1a6;
+      --muted: #86868b;
+      --shadow: 0 2px 16px rgba(255, 255, 255, 0.06);
+      --shadow-lg: 0 8px 48px rgba(255, 255, 255, 0.1);
+      --logo-color: #f5f5f7;
+      --border-color: rgba(255, 255, 255, 0.12);
+      --nav-bg: rgba(29, 29, 31, 0.9);
     }
 
     [data-theme="light"] {
-      --bg: #f6f8fb;
-      --bg-end: #ffffff;
+      --bg: #ffffff;
+      --bg-secondary: #f5f5f7;
       --card: #ffffff;
-      --text: #0f1724;
-      --muted: #6b7280;
-      --shadow: 0 8px 30px rgba(15, 23, 36, 0.08);
-      --logo-color: #0f1724;
-      --border-color: rgba(107, 114, 128, 0.15);
+      --text: #1d1d1f;
+      --text-secondary: #86868b;
+      --muted: #6e6e73;
+      --shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 8px 48px rgba(0, 0, 0, 0.12);
+      --logo-color: #1d1d1f;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --nav-bg: rgba(255, 255, 255, 0.8);
     }
 
-    *{box-sizing: border-box}
-    html,body{height:100%;margin:0;padding:0}
+    *{box-sizing: border-box; margin: 0; padding: 0;}
+    html{scroll-behavior: smooth;}
     body{
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-      background: linear-gradient(180deg, var(--bg), var(--bg-end));
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
       color: var(--text);
-      transition: background 0.3s ease, color 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
+      transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      line-height: 1.6;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
+      overflow-x: hidden;
     }
 
-    .card{
-      width: 100%;
-      max-width: 900px;
-      background: var(--card);
-      border-radius: var(--radius);
-      padding: clamp(2rem, 4vw, 3.5rem);
-      box-shadow: var(--shadow);
-      text-align: center;
-      animation: fadeIn 0.6s ease-out;
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 44px;
+      background: var(--nav-bg);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 max(22px, env(safe-area-inset-right));
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .nav-logo {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.02em;
     }
 
-    .logo{
-      width: 100px;
-      height: 110px;
-      margin: 0 auto 1.5rem;
-      color: var(--logo-color);
-      transition: color 0.3s ease, transform 0.3s ease;
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
     }
 
-    .logo:hover {
-      transform: scale(1.05);
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s ease;
     }
 
-    .logo svg {
-      width: 100%;
-      height: 100%;
+    .nav-links a:hover {
+      color: var(--text);
     }
 
     /* Theme toggle button */
     .theme-toggle {
-      position: fixed;
-      top: 1.5rem;
-      right: 1.5rem;
-      width: 44px;
-      height: 44px;
+      width: 32px;
+      height: 32px;
       border: none;
       border-radius: 50%;
-      background: var(--card);
+      background: transparent;
       color: var(--text);
       cursor: pointer;
-      box-shadow: var(--shadow);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       transition: transform 0.2s ease, background 0.3s ease;
-      z-index: 100;
     }
 
     .theme-toggle:hover {
       transform: scale(1.1);
+      background: var(--bg-secondary);
     }
 
     .theme-toggle .icon-sun,
     .theme-toggle .icon-moon {
       position: absolute;
-      transition: opacity 0.3s ease, transform 0.3s ease;
+      transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .theme-toggle .icon-sun {
@@ -220,202 +239,672 @@
       opacity: 0;
     }
 
-    h1{
-      margin: 0 0 0.75rem;
-      font-size: clamp(1.8rem, 3.6vw, 2.5rem);
-      line-height: 1.05;
-      letter-spacing: -0.02em;
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: var(--bg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150%;
+      height: 150%;
+      background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 980px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo{
+      width: 120px;
+      height: 132px;
+      margin: 0 auto 2rem;
+      color: var(--logo-color);
+      transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      animation: logoFloat 3s ease-in-out infinite;
+    }
+
+    @keyframes logoFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .logo:hover {
+      transform: scale(1.05) translateY(-10px);
+    }
+
+    .logo svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 4px 20px rgba(102, 126, 234, 0.3));
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
       font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin: 0 0 1rem;
+      color: var(--text);
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .tagline{
-      margin: 0 0 2rem;
-      color: var(--accent);
-      font-size: 1.1rem;
+    .hero .company-name {
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      color: var(--text-secondary);
       font-weight: 500;
-      letter-spacing: 0.02em;
+      margin-bottom: 2rem;
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s backwards;
     }
 
-    p.lead{
-      margin: 0 0 2rem;
+    .hero .tagline {
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      background: var(--hero-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s backwards;
+    }
+
+    .hero .lead {
+      font-size: clamp(1rem, 2vw, 1.3rem);
       color: var(--muted);
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s backwards;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* CTA Buttons */
+    .cta-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.4s backwards;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.875rem 2rem;
       font-size: 1.05rem;
-      line-height: 1.7;
-      max-width: 65ch;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 980px;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      border: none;
+      cursor: pointer;
+    }
+
+    .button-primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 4px 16px rgba(0, 113, 227, 0.3);
+    }
+
+    .button-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0, 113, 227, 0.4);
+    }
+
+    .button-secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 2px solid var(--accent);
+    }
+
+    .button-secondary:hover {
+      background: var(--accent);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* Features Section */
+    .features-section {
+      padding: 100px 20px;
+      background: var(--bg-secondary);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .section-subtitle {
+      text-align: center;
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      color: var(--muted);
+      margin-bottom: 4rem;
+      max-width: 600px;
       margin-left: auto;
       margin-right: auto;
     }
 
-    .features{
+    .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin: 2.5rem 0;
-      text-align: left;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    .feature{
-      padding: 1.25rem;
-      background: var(--bg);
-      border-radius: 10px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    .feature {
+      background: var(--card);
+      padding: 2.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid var(--border-color);
     }
 
-    .feature:hover{
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(15, 23, 36, 0.1);
+    .feature:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
     }
 
-    .feature-icon{
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      display: block;
     }
 
-    .feature h3{
-      margin: 0 0 0.5rem;
-      font-size: 1.1rem;
+    .feature h3 {
+      font-size: 1.5rem;
       font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .feature p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 60px 20px;
+      text-align: center;
+      background: var(--bg);
+      border-top: 1px solid var(--border-color);
+    }
+
+    .footer-content {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .footer p {
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
       color: var(--text);
     }
 
-    .feature p{
-      margin: 0;
-      font-size: 0.95rem;
-      color: var(--muted);
-      line-height: 1.5;
+    /* Language selector */
+    .lang-selector {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
     }
 
-    .cta{
-      margin: 2rem 0 1.5rem;
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      transition: all 0.2s ease;
     }
 
-    .button{
-      display: inline-block;
-      padding: 0.85rem 2rem;
-      background: var(--accent);
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: background 0.2s ease, transform 0.2s ease;
-      box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25);
+    .lang-btn:hover {
+      color: var(--text);
+      background: var(--bg-secondary);
     }
 
-    .button:hover{
-      background: var(--accent-hover);
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.35);
+    .lang-btn.active {
+      color: var(--accent);
+      font-weight: 600;
     }
 
-    .button:active{
-      transform: translateY(0);
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        padding: 0 16px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .logo {
+        width: 80px;
+        height: 88px;
+      }
+
+      .hero {
+        padding: 60px 20px 40px;
+      }
+
+      .cta-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .button {
+        text-align: center;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .feature {
+        padding: 2rem;
+      }
     }
 
-    .meta{
-      margin-top: 2.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border-color);
-      color: var(--muted);
-      font-size: 0.92rem;
+    /* Smooth transitions for all interactive elements */
+    button, a, .feature, .logo {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .card, .feature, .theme-toggle {
-      transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-    }
-
-    /* Small screens: make sure spacing stays comfortable */
-    @media (max-width: 640px){
-      .card{ padding: 1.5rem; border-radius: 12px }
-      p.lead{ font-size: 1rem }
-      .features{ grid-template-columns: 1fr; gap: 1rem }
-      .logo{ width: 70px; height: 77px }
-      .theme-toggle { top: 1rem; right: 1rem; width: 40px; height: 40px; }
+    /* Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Theme Toggle Button -->
-  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
-    <span class="icon-sun" aria-hidden="true">☀️</span>
-    <span class="icon-moon" aria-hidden="true">🌙</span>
-  </button>
-
-  <main class="card" role="main" aria-labelledby="site-heading">
-    <div class="logo" aria-hidden="true">
-      <!-- Madrigal Coat of Arms -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="currentColor">
-        <!-- Eagle -->
-        <g class="eagle">
-          <ellipse cx="100" cy="28" rx="12" ry="10"/>
-          <circle cx="100" cy="15" r="8"/>
-          <path d="M100 18 L105 23 L100 21 L95 23 Z"/>
-          <path d="M88 28 Q60 15 30 25 Q45 30 55 35 Q65 32 75 33 Q82 30 88 28"/>
-          <path d="M112 28 Q140 15 170 25 Q155 30 145 35 Q135 32 125 33 Q118 30 112 28"/>
-        </g>
-        <!-- Shield -->
-        <g class="shield">
-          <path d="M55 55 L55 130 Q55 165 100 185 Q145 165 145 130 L145 55 Z" fill="none" stroke="currentColor" stroke-width="4"/>
-          <circle cx="100" cy="95" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
-          <circle cx="80" cy="125" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
-          <circle cx="120" cy="125" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
-        </g>
-        <!-- Laurel branches -->
-        <g class="laurel-left">
-          <path d="M50 185 Q30 150 35 100" fill="none" stroke="currentColor" stroke-width="2"/>
-          <ellipse cx="38" cy="110" rx="8" ry="15" transform="rotate(-20 38 110)" fill="none" stroke="currentColor" stroke-width="2"/>
-          <ellipse cx="34" cy="130" rx="8" ry="15" transform="rotate(-30 34 130)" fill="none" stroke="currentColor" stroke-width="2"/>
-          <ellipse cx="32" cy="150" rx="8" ry="15" transform="rotate(-40 32 150)" fill="none" stroke="currentColor" stroke-width="2"/>
-          <ellipse cx="35" cy="170" rx="8" ry="14" transform="rotate(-50 35 170)" fill="none" stroke="currentColor" stroke-width="2"/>
-        </g>
-        <g class="laurel-right">
-          <path d="M150 185 Q170 150 165 100" fill="none" stroke="currentColor" stroke-width="2"/>
-          <ellipse cx="162" cy="110" rx="8" ry="15" transform="rotate(20 162 110)" fill="none" stroke="currentColor" stroke-width="2"/>
-          <ellipse cx="166" cy="130" rx="8" ry="15" transform="rotate(30 166 130)" fill="none" stroke="currentColor" stroke-width="2"/>
-          <ellipse cx="168" cy="150" rx="8" ry="15" transform="rotate(40 168 150)" fill="none" stroke="currentColor" stroke-width="2"/>
-          <ellipse cx="165" cy="170" rx="8" ry="14" transform="rotate(50 165 170)" fill="none" stroke="currentColor" stroke-width="2"/>
-        </g>
-        <path d="M50 185 Q75 200 100 205 Q125 200 150 185" fill="none" stroke="currentColor" stroke-width="2"/>
-      </svg>
+  <!-- Navigation -->
+  <nav>
+    <a href="/" class="nav-logo">Madrigal</a>
+    <ul class="nav-links">
+      <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <div class="lang-selector">
+        <button class="lang-btn active" data-lang="es" aria-label="Español">ES</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar modo oscuro" title="Cambiar modo claro/oscuro">
+        <span class="icon-sun" aria-hidden="true">☀️</span>
+        <span class="icon-moon" aria-hidden="true">🌙</span>
+      </button>
     </div>
-    <h1 id="site-heading">Madrigal</h1>
-    <p class="tagline">Digital Innovation & Creative Solutions</p>
-    <p class="lead">
-      Welcome to Madrigal.mx, where innovation meets creativity. We specialize in delivering 
-      cutting-edge digital solutions that transform ideas into reality. From web development 
-      to digital strategy, we're here to help your vision come to life.
-    </p>
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="logo" aria-hidden="true">
+        <!-- Madrigal Coat of Arms -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="currentColor">
+          <!-- Eagle -->
+          <g class="eagle">
+            <ellipse cx="100" cy="28" rx="12" ry="10"/>
+            <circle cx="100" cy="15" r="8"/>
+            <path d="M100 18 L105 23 L100 21 L95 23 Z"/>
+            <path d="M88 28 Q60 15 30 25 Q45 30 55 35 Q65 32 75 33 Q82 30 88 28"/>
+            <path d="M112 28 Q140 15 170 25 Q155 30 145 35 Q135 32 125 33 Q118 30 112 28"/>
+          </g>
+          <!-- Shield -->
+          <g class="shield">
+            <path d="M55 55 L55 130 Q55 165 100 185 Q145 165 145 130 L145 55 Z" fill="none" stroke="currentColor" stroke-width="4"/>
+            <circle cx="100" cy="95" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+            <circle cx="80" cy="125" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+            <circle cx="120" cy="125" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+          </g>
+          <!-- Laurel branches -->
+          <g class="laurel-left">
+            <path d="M50 185 Q30 150 35 100" fill="none" stroke="currentColor" stroke-width="2"/>
+            <ellipse cx="38" cy="110" rx="8" ry="15" transform="rotate(-20 38 110)" fill="none" stroke="currentColor" stroke-width="2"/>
+            <ellipse cx="34" cy="130" rx="8" ry="15" transform="rotate(-30 34 130)" fill="none" stroke="currentColor" stroke-width="2"/>
+            <ellipse cx="32" cy="150" rx="8" ry="15" transform="rotate(-40 32 150)" fill="none" stroke="currentColor" stroke-width="2"/>
+            <ellipse cx="35" cy="170" rx="8" ry="14" transform="rotate(-50 35 170)" fill="none" stroke="currentColor" stroke-width="2"/>
+          </g>
+          <g class="laurel-right">
+            <path d="M150 185 Q170 150 165 100" fill="none" stroke="currentColor" stroke-width="2"/>
+            <ellipse cx="162" cy="110" rx="8" ry="15" transform="rotate(20 162 110)" fill="none" stroke="currentColor" stroke-width="2"/>
+            <ellipse cx="166" cy="130" rx="8" ry="15" transform="rotate(30 166 130)" fill="none" stroke="currentColor" stroke-width="2"/>
+            <ellipse cx="168" cy="150" rx="8" ry="15" transform="rotate(40 168 150)" fill="none" stroke="currentColor" stroke-width="2"/>
+            <ellipse cx="165" cy="170" rx="8" ry="14" transform="rotate(50 165 170)" fill="none" stroke="currentColor" stroke-width="2"/>
+          </g>
+          <path d="M50 185 Q75 200 100 205 Q125 200 150 185" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </div>
+      <h1 data-i18n="hero.title">Excelencia Digital</h1>
+      <p class="company-name">Madrigal Systems LLC & Monig Media™</p>
+      <p class="tagline" data-i18n="hero.tagline">Transformando Ideas en Realidad Digital</p>
+      <p class="lead" data-i18n="hero.lead">
+        Creamos experiencias digitales excepcionales que impulsan tu negocio. 
+        Desde desarrollo web de vanguardia hasta estrategias digitales innovadoras, 
+        estamos aquí para llevar tu visión al siguiente nivel.
+      </p>
+      <div class="cta-group">
+        <a href="#contacto" class="button button-primary" data-i18n="hero.cta.primary">Comenzar Ahora</a>
+        <a href="#servicios" class="button button-secondary" data-i18n="hero.cta.secondary">Conocer Más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section" id="servicios">
+    <h2 class="section-title" data-i18n="features.title">Nuestros Servicios</h2>
+    <p class="section-subtitle" data-i18n="features.subtitle">
+      Soluciones integrales diseñadas para impulsar tu presencia digital
+    </p>
     <div class="features">
       <div class="feature">
-        <div class="feature-icon" aria-hidden="true">🚀</div>
-        <h3>Fast & Modern</h3>
-        <p>Built with the latest technologies for optimal performance</p>
+        <span class="feature-icon" aria-hidden="true">🚀</span>
+        <h3 data-i18n="features.modern.title">Rápido y Moderno</h3>
+        <p data-i18n="features.modern.description">
+          Construido con las últimas tecnologías para un rendimiento óptimo. 
+          Velocidad, eficiencia y experiencia de usuario excepcional.
+        </p>
       </div>
       <div class="feature">
-        <div class="feature-icon" aria-hidden="true">💡</div>
-        <h3>Innovative</h3>
-        <p>Creative solutions tailored to your unique needs</p>
+        <span class="feature-icon" aria-hidden="true">💡</span>
+        <h3 data-i18n="features.innovative.title">Innovador</h3>
+        <p data-i18n="features.innovative.description">
+          Soluciones creativas personalizadas para tus necesidades únicas. 
+          Pensamiento vanguardista aplicado a cada proyecto.
+        </p>
       </div>
       <div class="feature">
-        <div class="feature-icon" aria-hidden="true">🎯</div>
-        <h3>Results-Driven</h3>
-        <p>Focused on delivering measurable outcomes</p>
+        <span class="feature-icon" aria-hidden="true">🎯</span>
+        <h3 data-i18n="features.results.title">Enfocado en Resultados</h3>
+        <p data-i18n="features.results.description">
+          Centrados en entregar resultados medibles y tangibles. 
+          Tu éxito es nuestra prioridad número uno.
+        </p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon" aria-hidden="true">🎨</span>
+        <h3 data-i18n="features.design.title">Diseño Elegante</h3>
+        <p data-i18n="features.design.description">
+          Interfaces hermosas e intuitivas que tus usuarios amarán. 
+          Estética y funcionalidad en perfecta armonía.
+        </p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon" aria-hidden="true">🔒</span>
+        <h3 data-i18n="features.secure.title">Seguro y Confiable</h3>
+        <p data-i18n="features.secure.description">
+          Protección de datos de nivel empresarial y máxima confiabilidad. 
+          Tu seguridad es nuestra responsabilidad.
+        </p>
+      </div>
+      <div class="feature">
+        <span class="feature-icon" aria-hidden="true">📱</span>
+        <h3 data-i18n="features.responsive.title">Totalmente Responsivo</h3>
+        <p data-i18n="features.responsive.description">
+          Perfecta experiencia en cualquier dispositivo o tamaño de pantalla. 
+          Accesible en todo momento, desde cualquier lugar.
+        </p>
       </div>
     </div>
+  </section>
 
-    <div class="cta">
-      <a href="mailto:contact@madrigal.mx" class="button" aria-label="Send email to contact@madrigal.mx">Get in Touch</a>
+  <!-- Footer -->
+  <footer class="footer" id="contacto">
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Madrigal Systems LLC & Monig Media™</p>
+      <p data-i18n="footer.rights">Todos los derechos reservados</p>
+      <div class="footer-links">
+        <a href="mailto:contact@madrigal.mx" data-i18n="footer.contact">Contacto</a>
+        <a href="#" data-i18n="footer.privacy">Privacidad</a>
+        <a href="#" data-i18n="footer.terms">Términos</a>
+      </div>
     </div>
-
-    <div class="meta">
-      © <span id="year"></span> Madrigal.mx · All rights reserved
-    </div>
-  </main>
+  </footer>
 
   <script>
-    // keep the footer year current
+    // Internationalization translations
+    const translations = {
+      es: {
+        nav: {
+          home: 'Inicio',
+          services: 'Servicios',
+          contact: 'Contacto'
+        },
+        hero: {
+          title: 'Excelencia Digital',
+          tagline: 'Transformando Ideas en Realidad Digital',
+          lead: 'Creamos experiencias digitales excepcionales que impulsan tu negocio. Desde desarrollo web de vanguardia hasta estrategias digitales innovadoras, estamos aquí para llevar tu visión al siguiente nivel.',
+          cta: {
+            primary: 'Comenzar Ahora',
+            secondary: 'Conocer Más'
+          }
+        },
+        features: {
+          title: 'Nuestros Servicios',
+          subtitle: 'Soluciones integrales diseñadas para impulsar tu presencia digital',
+          modern: {
+            title: 'Rápido y Moderno',
+            description: 'Construido con las últimas tecnologías para un rendimiento óptimo. Velocidad, eficiencia y experiencia de usuario excepcional.'
+          },
+          innovative: {
+            title: 'Innovador',
+            description: 'Soluciones creativas personalizadas para tus necesidades únicas. Pensamiento vanguardista aplicado a cada proyecto.'
+          },
+          results: {
+            title: 'Enfocado en Resultados',
+            description: 'Centrados en entregar resultados medibles y tangibles. Tu éxito es nuestra prioridad número uno.'
+          },
+          design: {
+            title: 'Diseño Elegante',
+            description: 'Interfaces hermosas e intuitivas que tus usuarios amarán. Estética y funcionalidad en perfecta armonía.'
+          },
+          secure: {
+            title: 'Seguro y Confiable',
+            description: 'Protección de datos de nivel empresarial y máxima confiabilidad. Tu seguridad es nuestra responsabilidad.'
+          },
+          responsive: {
+            title: 'Totalmente Responsivo',
+            description: 'Perfecta experiencia en cualquier dispositivo o tamaño de pantalla. Accesible en todo momento, desde cualquier lugar.'
+          }
+        },
+        footer: {
+          rights: 'Todos los derechos reservados',
+          contact: 'Contacto',
+          privacy: 'Privacidad',
+          terms: 'Términos'
+        }
+      },
+      en: {
+        nav: {
+          home: 'Home',
+          services: 'Services',
+          contact: 'Contact'
+        },
+        hero: {
+          title: 'Digital Excellence',
+          tagline: 'Transforming Ideas into Digital Reality',
+          lead: 'We create exceptional digital experiences that drive your business forward. From cutting-edge web development to innovative digital strategies, we\'re here to take your vision to the next level.',
+          cta: {
+            primary: 'Get Started',
+            secondary: 'Learn More'
+          }
+        },
+        features: {
+          title: 'Our Services',
+          subtitle: 'Comprehensive solutions designed to boost your digital presence',
+          modern: {
+            title: 'Fast & Modern',
+            description: 'Built with the latest technologies for optimal performance. Speed, efficiency, and exceptional user experience.'
+          },
+          innovative: {
+            title: 'Innovative',
+            description: 'Creative solutions tailored to your unique needs. Forward-thinking approach applied to every project.'
+          },
+          results: {
+            title: 'Results-Driven',
+            description: 'Focused on delivering measurable and tangible results. Your success is our top priority.'
+          },
+          design: {
+            title: 'Elegant Design',
+            description: 'Beautiful and intuitive interfaces that your users will love. Aesthetics and functionality in perfect harmony.'
+          },
+          secure: {
+            title: 'Secure & Reliable',
+            description: 'Enterprise-level data protection and maximum reliability. Your security is our responsibility.'
+          },
+          responsive: {
+            title: 'Fully Responsive',
+            description: 'Perfect experience on any device or screen size. Accessible anytime, from anywhere.'
+          }
+        },
+        footer: {
+          rights: 'All rights reserved',
+          contact: 'Contact',
+          privacy: 'Privacy',
+          terms: 'Terms'
+        }
+      }
+    };
+
+    // Update copyright year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Detect country by IP using ipapi.co (free, no key required)
+    async function detectCountry() {
+      try {
+        const response = await fetch('https://ipapi.co/json/', { timeout: 3000 });
+        const data = await response.json();
+        return data.country_code;
+      } catch (error) {
+        console.log('Could not detect location, using default');
+        return null;
+      }
+    }
+
+    // Set language based on detection or saved preference
+    function setLanguage(lang) {
+      const html = document.documentElement;
+      html.lang = lang;
+      
+      // Update all i18n elements
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const keys = key.split('.');
+        let value = translations[lang];
+        
+        for (const k of keys) {
+          value = value[k];
+        }
+        
+        if (value) {
+          element.textContent = value;
+        }
+      });
+      
+      // Update language buttons
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+      
+      // Update meta tags
+      const metaTitle = lang === 'es' 
+        ? 'Madrigal Systems LLC & Monig Media™ - Innovación Digital'
+        : 'Madrigal Systems LLC & Monig Media™ - Digital Innovation';
+      const metaDesc = lang === 'es'
+        ? 'Soluciones digitales de vanguardia que transforman ideas en realidad.'
+        : 'Cutting-edge digital solutions that transform ideas into reality.';
+      
+      document.title = metaTitle;
+      document.querySelector('meta[name="title"]').content = metaTitle;
+      document.querySelector('meta[name="description"]').content = metaDesc;
+      document.querySelector('meta[property="og:title"]').content = metaTitle;
+      document.querySelector('meta[property="og:description"]').content = metaDesc;
+      document.querySelector('meta[property="og:locale"]').content = lang === 'es' ? 'es_MX' : 'en_US';
+      
+      // Save preference
+      localStorage.setItem('language', lang);
+    }
+
+    // Initialize language
+    async function initLanguage() {
+      // Check for saved preference
+      const savedLang = localStorage.getItem('language');
+      if (savedLang) {
+        setLanguage(savedLang);
+        return;
+      }
+      
+      // Try to detect by IP
+      const countryCode = await detectCountry();
+      
+      // Set Spanish for Mexico, English for others
+      if (countryCode === 'MX') {
+        setLanguage('es');
+      } else {
+        setLanguage('es'); // Default to Spanish as per requirements
+      }
+    }
+
+    // Language selector
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        setLanguage(lang);
+      });
+    });
 
     // Theme toggle functionality
     (function() {
@@ -446,6 +935,44 @@
         localStorage.setItem('theme', newTheme);
       });
     })();
+
+    // Initialize language on page load
+    initLanguage();
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const navHeight = document.querySelector('nav').offsetHeight;
+          const targetPosition = target.offsetTop - navHeight;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Add scroll effect to navigation
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 100) {
+        nav.style.boxShadow = 'var(--shadow)';
+      } else {
+        nav.style.boxShadow = 'none';
+      }
+      
+      lastScroll = currentScroll;
+    });
   </script>
 </body>
 </html>
