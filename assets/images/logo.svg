@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="currentColor">
+  <!-- Eagle -->
+  <g class="eagle">
+    <!-- Eagle body -->
+    <ellipse cx="100" cy="28" rx="12" ry="10"/>
+    <!-- Eagle head -->
+    <circle cx="100" cy="15" r="8"/>
+    <!-- Beak -->
+    <path d="M100 18 L105 23 L100 21 L95 23 Z"/>
+    <!-- Left wing -->
+    <path d="M88 28 Q60 15 30 25 Q45 30 55 35 Q65 32 75 33 Q82 30 88 28"/>
+    <path d="M30 25 Q35 28 40 30"/>
+    <path d="M40 27 Q45 30 50 32"/>
+    <path d="M50 29 Q55 32 60 34"/>
+    <!-- Right wing -->
+    <path d="M112 28 Q140 15 170 25 Q155 30 145 35 Q135 32 125 33 Q118 30 112 28"/>
+    <path d="M170 25 Q165 28 160 30"/>
+    <path d="M160 27 Q155 30 150 32"/>
+    <path d="M150 29 Q145 32 140 34"/>
+  </g>
+  
+  <!-- Shield -->
+  <g class="shield">
+    <!-- Shield outline -->
+    <path d="M55 55 L55 130 Q55 165 100 185 Q145 165 145 130 L145 55 Z" fill="none" stroke="currentColor" stroke-width="4"/>
+    <!-- Three circles in shield -->
+    <circle cx="100" cy="95" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+    <circle cx="80" cy="125" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+    <circle cx="120" cy="125" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+  </g>
+  
+  <!-- Left laurel branch -->
+  <g class="laurel-left">
+    <path d="M50 185 Q30 150 35 100" fill="none" stroke="currentColor" stroke-width="2"/>
+    <!-- Leaves -->
+    <ellipse cx="38" cy="110" rx="8" ry="15" transform="rotate(-20 38 110)" fill="none" stroke="currentColor" stroke-width="2"/>
+    <ellipse cx="34" cy="130" rx="8" ry="15" transform="rotate(-30 34 130)" fill="none" stroke="currentColor" stroke-width="2"/>
+    <ellipse cx="32" cy="150" rx="8" ry="15" transform="rotate(-40 32 150)" fill="none" stroke="currentColor" stroke-width="2"/>
+    <ellipse cx="35" cy="170" rx="8" ry="14" transform="rotate(-50 35 170)" fill="none" stroke="currentColor" stroke-width="2"/>
+    <ellipse cx="42" cy="185" rx="7" ry="12" transform="rotate(-60 42 185)" fill="none" stroke="currentColor" stroke-width="2"/>
+  </g>
+  
+  <!-- Right laurel branch -->
+  <g class="laurel-right">
+    <path d="M150 185 Q170 150 165 100" fill="none" stroke="currentColor" stroke-width="2"/>
+    <!-- Leaves -->
+    <ellipse cx="162" cy="110" rx="8" ry="15" transform="rotate(20 162 110)" fill="none" stroke="currentColor" stroke-width="2"/>
+    <ellipse cx="166" cy="130" rx="8" ry="15" transform="rotate(30 166 130)" fill="none" stroke="currentColor" stroke-width="2"/>
+    <ellipse cx="168" cy="150" rx="8" ry="15" transform="rotate(40 168 150)" fill="none" stroke="currentColor" stroke-width="2"/>
+    <ellipse cx="165" cy="170" rx="8" ry="14" transform="rotate(50 165 170)" fill="none" stroke="currentColor" stroke-width="2"/>
+    <ellipse cx="158" cy="185" rx="7" ry="12" transform="rotate(60 158 185)" fill="none" stroke="currentColor" stroke-width="2"/>
+  </g>
+  
+  <!-- Crossed stems at bottom -->
+  <path d="M50 185 Q75 200 100 205 Q125 200 150 185" fill="none" stroke="currentColor" stroke-width="2"/>
+</svg>

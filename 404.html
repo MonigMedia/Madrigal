@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Page Not Found - Madrigal.mx</title>
+  <style>
+    :root{
+      --bg: #f6f8fb;
+      --bg-end: #ffffff;
+      --card: #ffffff;
+      --text: #0f1724;
+      --muted: #6b7280;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --shadow: 0 8px 30px rgba(15, 23, 36, 0.08);
+      --radius: 14px;
+      --logo-color: #0f1724;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0a0e17;
+        --bg-end: #0f1724;
+        --card: #1a2332;
+        --text: #f6f8fb;
+        --muted: #9ca3af;
+        --shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        --logo-color: #f6f8fb;
+      }
+    }
+
+    [data-theme="dark"] {
+      --bg: #0a0e17;
+      --bg-end: #0f1724;
+      --card: #1a2332;
+      --text: #f6f8fb;
+      --muted: #9ca3af;
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      --logo-color: #f6f8fb;
+    }
+
+    [data-theme="light"] {
+      --bg: #f6f8fb;
+      --bg-end: #ffffff;
+      --card: #ffffff;
+      --text: #0f1724;
+      --muted: #6b7280;
+      --shadow: 0 8px 30px rgba(15, 23, 36, 0.08);
+      --logo-color: #0f1724;
+    }
+
+    *{box-sizing: border-box}
+    html,body{height:100%;margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      background: linear-gradient(180deg, var(--bg), var(--bg-end));
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .card{
+      width: 100%;
+      max-width: 500px;
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: clamp(2rem, 4vw, 3.5rem);
+      box-shadow: var(--shadow);
+      text-align: center;
+      animation: fadeIn 0.6s ease-out;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      width: 80px;
+      height: 88px;
+      margin: 0 auto 1.5rem;
+      color: var(--logo-color);
+      transition: color 0.3s ease;
+    }
+
+    .logo svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .error-code{
+      font-size: 5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent), #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 0;
+      line-height: 1;
+    }
+
+    h1{
+      margin: 1rem 0 0.75rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    p{
+      margin: 0 0 2rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .button{
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: background 0.2s ease, transform 0.2s ease;
+      box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25);
+    }
+
+    .button:hover{
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+  </style>
+  <script>
+    // Check for saved theme preference
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <main class="card">
+    <div class="logo" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="currentColor">
+        <g class="eagle">
+          <ellipse cx="100" cy="28" rx="12" ry="10"/>
+          <circle cx="100" cy="15" r="8"/>
+          <path d="M100 18 L105 23 L100 21 L95 23 Z"/>
+          <path d="M88 28 Q60 15 30 25 Q45 30 55 35 Q65 32 75 33 Q82 30 88 28"/>
+          <path d="M112 28 Q140 15 170 25 Q155 30 145 35 Q135 32 125 33 Q118 30 112 28"/>
+        </g>
+        <g class="shield">
+          <path d="M55 55 L55 130 Q55 165 100 185 Q145 165 145 130 L145 55 Z" fill="none" stroke="currentColor" stroke-width="4"/>
+          <circle cx="100" cy="95" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="80" cy="125" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="120" cy="125" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+        </g>
+        <g class="laurel-left">
+          <path d="M50 185 Q30 150 35 100" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="38" cy="110" rx="8" ry="15" transform="rotate(-20 38 110)" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="34" cy="130" rx="8" ry="15" transform="rotate(-30 34 130)" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="32" cy="150" rx="8" ry="15" transform="rotate(-40 32 150)" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="35" cy="170" rx="8" ry="14" transform="rotate(-50 35 170)" fill="none" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <g class="laurel-right">
+          <path d="M150 185 Q170 150 165 100" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="162" cy="110" rx="8" ry="15" transform="rotate(20 162 110)" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="166" cy="130" rx="8" ry="15" transform="rotate(30 166 130)" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="168" cy="150" rx="8" ry="15" transform="rotate(40 168 150)" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="165" cy="170" rx="8" ry="14" transform="rotate(50 165 170)" fill="none" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <path d="M50 185 Q75 200 100 205 Q125 200 150 185" fill="none" stroke="currentColor" stroke-width="2"/>
+      </svg>
+    </div>
+    <p class="error-code">404</p>
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <a href="/" class="button">Back to Home</a>
+  </main>
+</body>
+</html>

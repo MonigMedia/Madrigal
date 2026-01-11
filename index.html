@@ -3,11 +3,63 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Madrigal - Innovation and creativity in digital solutions" />
-  <title>Madrigal.mx - Digital Innovation</title>
+  
+  <!-- Primary Meta Tags -->
+  <title>Madrigal.mx - Digital Innovation & Creative Solutions</title>
+  <meta name="title" content="Madrigal.mx - Digital Innovation & Creative Solutions" />
+  <meta name="description" content="Madrigal.mx specializes in cutting-edge digital solutions that transform ideas into reality. Web development, digital strategy, and creative innovation." />
+  <meta name="keywords" content="digital innovation, web development, creative solutions, digital strategy, Madrigal, Mexico" />
+  <meta name="author" content="Madrigal.mx" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://madrigal.mx/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://madrigal.mx/" />
+  <meta property="og:title" content="Madrigal.mx - Digital Innovation & Creative Solutions" />
+  <meta property="og:description" content="Madrigal.mx specializes in cutting-edge digital solutions that transform ideas into reality. Web development, digital strategy, and creative innovation." />
+  <meta property="og:image" content="https://madrigal.mx/assets/images/og-image.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Madrigal.mx" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://madrigal.mx/" />
+  <meta property="twitter:title" content="Madrigal.mx - Digital Innovation & Creative Solutions" />
+  <meta property="twitter:description" content="Madrigal.mx specializes in cutting-edge digital solutions that transform ideas into reality." />
+  <meta property="twitter:image" content="https://madrigal.mx/assets/images/og-image.png" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#3b82f6" />
+  <meta name="msapplication-TileColor" content="#3b82f6" />
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Madrigal.mx",
+    "url": "https://madrigal.mx",
+    "logo": "https://madrigal.mx/assets/images/logo.png",
+    "description": "Digital Innovation & Creative Solutions",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@madrigal.mx",
+      "contactType": "customer service"
+    }
+  }
+  </script>
+  
   <style>
     :root{
       --bg: #f6f8fb;
+      --bg-end: #ffffff;
       --card: #ffffff;
       --text: #0f1724;
       --muted: #6b7280;
@@ -15,14 +67,54 @@
       --accent-hover: #2563eb;
       --shadow: 0 8px 30px rgba(15, 23, 36, 0.08);
       --radius: 14px;
+      --logo-color: #0f1724;
+      --border-color: rgba(107, 114, 128, 0.15);
+    }
+
+    /* Dark Mode */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0a0e17;
+        --bg-end: #0f1724;
+        --card: #1a2332;
+        --text: #f6f8fb;
+        --muted: #9ca3af;
+        --shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        --logo-color: #f6f8fb;
+        --border-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    /* Manual dark mode toggle */
+    [data-theme="dark"] {
+      --bg: #0a0e17;
+      --bg-end: #0f1724;
+      --card: #1a2332;
+      --text: #f6f8fb;
+      --muted: #9ca3af;
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      --logo-color: #f6f8fb;
+      --border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    [data-theme="light"] {
+      --bg: #f6f8fb;
+      --bg-end: #ffffff;
+      --card: #ffffff;
+      --text: #0f1724;
+      --muted: #6b7280;
+      --shadow: 0 8px 30px rgba(15, 23, 36, 0.08);
+      --logo-color: #0f1724;
+      --border-color: rgba(107, 114, 128, 0.15);
     }
 
     *{box-sizing: border-box}
     html,body{height:100%;margin:0;padding:0}
     body{
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-      background: linear-gradient(180deg, var(--bg), #fff);
+      background: linear-gradient(180deg, var(--bg), var(--bg-end));
       color: var(--text);
+      transition: background 0.3s ease, color 0.3s ease;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -48,18 +140,84 @@
     }
 
     .logo{
-      width: 80px;
-      height: 80px;
+      width: 100px;
+      height: 110px;
       margin: 0 auto 1.5rem;
-      background: linear-gradient(135deg, var(--accent), #8b5cf6);
-      border-radius: 20px;
+      color: var(--logo-color);
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    .logo svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Theme toggle button */
+    .theme-toggle {
+      position: fixed;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 44px;
+      height: 44px;
+      border: none;
+      border-radius: 50%;
+      background: var(--card);
+      color: var(--text);
+      cursor: pointer;
+      box-shadow: var(--shadow);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: white;
-      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+      font-size: 1.3rem;
+      transition: transform 0.2s ease, background 0.3s ease;
+      z-index: 100;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.1);
+    }
+
+    .theme-toggle .icon-sun,
+    .theme-toggle .icon-moon {
+      position: absolute;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .theme-toggle .icon-sun {
+      opacity: 1;
+    }
+
+    .theme-toggle .icon-moon {
+      opacity: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .theme-toggle .icon-sun {
+        opacity: 0;
+      }
+      .theme-toggle .icon-moon {
+        opacity: 1;
+      }
+    }
+
+    [data-theme="dark"] .theme-toggle .icon-sun {
+      opacity: 0;
+    }
+
+    [data-theme="dark"] .theme-toggle .icon-moon {
+      opacity: 1;
+    }
+
+    [data-theme="light"] .theme-toggle .icon-sun {
+      opacity: 1;
+    }
+
+    [data-theme="light"] .theme-toggle .icon-moon {
+      opacity: 0;
     }
 
     h1{
@@ -157,9 +315,13 @@
     .meta{
       margin-top: 2.5rem;
       padding-top: 1.5rem;
-      border-top: 1px solid rgba(107, 114, 128, 0.15);
+      border-top: 1px solid var(--border-color);
       color: var(--muted);
       font-size: 0.92rem;
+    }
+
+    .card, .feature, .theme-toggle {
+      transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
     }
 
     /* Small screens: make sure spacing stays comfortable */
@@ -167,13 +329,55 @@
       .card{ padding: 1.5rem; border-radius: 12px }
       p.lead{ font-size: 1rem }
       .features{ grid-template-columns: 1fr; gap: 1rem }
-      .logo{ width: 60px; height: 60px; font-size: 2rem }
+      .logo{ width: 70px; height: 77px }
+      .theme-toggle { top: 1rem; right: 1rem; width: 40px; height: 40px; }
     }
   </style>
 </head>
 <body>
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+    <span class="icon-sun" aria-hidden="true">☀️</span>
+    <span class="icon-moon" aria-hidden="true">🌙</span>
+  </button>
+
   <main class="card" role="main" aria-labelledby="site-heading">
-    <div class="logo" aria-hidden="true">M</div>
+    <div class="logo" aria-hidden="true">
+      <!-- Madrigal Coat of Arms -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="currentColor">
+        <!-- Eagle -->
+        <g class="eagle">
+          <ellipse cx="100" cy="28" rx="12" ry="10"/>
+          <circle cx="100" cy="15" r="8"/>
+          <path d="M100 18 L105 23 L100 21 L95 23 Z"/>
+          <path d="M88 28 Q60 15 30 25 Q45 30 55 35 Q65 32 75 33 Q82 30 88 28"/>
+          <path d="M112 28 Q140 15 170 25 Q155 30 145 35 Q135 32 125 33 Q118 30 112 28"/>
+        </g>
+        <!-- Shield -->
+        <g class="shield">
+          <path d="M55 55 L55 130 Q55 165 100 185 Q145 165 145 130 L145 55 Z" fill="none" stroke="currentColor" stroke-width="4"/>
+          <circle cx="100" cy="95" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="80" cy="125" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="120" cy="125" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+        </g>
+        <!-- Laurel branches -->
+        <g class="laurel-left">
+          <path d="M50 185 Q30 150 35 100" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="38" cy="110" rx="8" ry="15" transform="rotate(-20 38 110)" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="34" cy="130" rx="8" ry="15" transform="rotate(-30 34 130)" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="32" cy="150" rx="8" ry="15" transform="rotate(-40 32 150)" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="35" cy="170" rx="8" ry="14" transform="rotate(-50 35 170)" fill="none" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <g class="laurel-right">
+          <path d="M150 185 Q170 150 165 100" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="162" cy="110" rx="8" ry="15" transform="rotate(20 162 110)" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="166" cy="130" rx="8" ry="15" transform="rotate(30 166 130)" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="168" cy="150" rx="8" ry="15" transform="rotate(40 168 150)" fill="none" stroke="currentColor" stroke-width="2"/>
+          <ellipse cx="165" cy="170" rx="8" ry="14" transform="rotate(50 165 170)" fill="none" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <path d="M50 185 Q75 200 100 205 Q125 200 150 185" fill="none" stroke="currentColor" stroke-width="2"/>
+      </svg>
+    </div>
     <h1 id="site-heading">Madrigal</h1>
     <p class="tagline">Digital Innovation & Creative Solutions</p>
     <p class="lead">
@@ -212,6 +416,36 @@
   <script>
     // keep the footer year current
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle functionality
+    (function() {
+      const toggle = document.getElementById('theme-toggle');
+      const html = document.documentElement;
+      
+      // Check for saved theme preference or default to system
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        html.setAttribute('data-theme', savedTheme);
+      }
+      
+      toggle.addEventListener('click', function() {
+        const currentTheme = html.getAttribute('data-theme');
+        let newTheme;
+        
+        if (currentTheme === 'dark') {
+          newTheme = 'light';
+        } else if (currentTheme === 'light') {
+          newTheme = 'dark';
+        } else {
+          // No explicit theme set, check system preference
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          newTheme = prefersDark ? 'light' : 'dark';
+        }
+        
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+    })();
   </script>
 </body>
 </html>

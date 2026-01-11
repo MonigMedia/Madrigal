@@ -1,0 +1,6 @@
+# robots.txt for madrigal.mx
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://madrigal.mx/sitemap.xml
